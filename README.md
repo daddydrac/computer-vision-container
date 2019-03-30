@@ -103,10 +103,12 @@ Run the image, mount the volumes for Jupyter and app folder for your fav IDE, an
 - Then run in cmd line:
 
 
-` tensorboard --logdir=/tmp/tensorflow/logs/ `
+` tensorboard --logdir=//tmp/tensorflow/mnist/logs `
 
 
-- cd over to /tf/notebooks/apps/gpu_benchmarks and run:
+- Type in: ` cd / ` to get root.
+
+Then cd into the folder that hot realods for custom IDE code at: `/apps/apps/gpu_benchmarks` and run:
 
 
 ` python tensorboard.py `

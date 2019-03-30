@@ -6,7 +6,7 @@ GPU Acclerated computing container for computer vision applications, that are re
 
 ### Features ###
 
-- *NEW* -> ####NVIDIA Rapids cugraph, cuml, and cudf!####
+- *NEW* -> ###NVIDIA Rapids cugraph, cuml, and cudf!###
 
        1. cuDF is a GPU DataFrame library for loading, joining, aggregating, filtering, and otherwise manipulating data.
        

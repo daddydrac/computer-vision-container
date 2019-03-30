@@ -14,7 +14,7 @@ GPU Acclerated computing container for computer vision applications, that are re
 
 3. cuGraph library is a collection of graph analytics that allow you to vizualize what is going on inside graph-based neural networks.
 
-- Learn to vizualize what is going on inside graph-based neural networks with cuGraph [see here for more](https://medium.com/rapids-ai/rapids-cugraph-1ab2d9a39ec6?ncid=em-ele-n2-79899&ncid=so-lin-lt-798&_lrsc=af6f9f62-bebc-4a4d-8008-1a4141ce62e2)!
+- Learn to vizualize what is going on inside graph-based neural networks with cuGraph, [see here for more](https://medium.com/rapids-ai/rapids-cugraph-1ab2d9a39ec6?ncid=em-ele-n2-79899&ncid=so-lin-lt-798&_lrsc=af6f9f62-bebc-4a4d-8008-1a4141ce62e2)!
 
 - NVIDIA TensorRT inference accelerator and CUDA 10
 

@@ -67,6 +67,12 @@ RUN ${PIP} install torchvision
 RUN pip install cupy-cuda100
 RUN pip install pycuda
 
+# Install NVIDIA Rapids and it's deps
+RUN apt install libopenblas-base libomp-dev -y
+RUN pip install cugraph-cuda100
+RUN pip install cuml-cuda100
+RUN pip install cudf-cuda100==0.6
+
 # Some TF tools expect a "python" binary
 RUN ln -s $(which ${PYTHON}) /usr/local/bin/python 
 

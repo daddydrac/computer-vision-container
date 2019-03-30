@@ -96,7 +96,7 @@ Run the image, mount the volumes for Jupyter and app folder for your fav IDE, an
 - Exec into container if you haven't:
 
 
-` docker ps `  ( gets <container id> ).
+` docker ps `  get <container id> 
 
 
 ` docker exec -u root -t -i <container id> /bin/bash `

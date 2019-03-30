@@ -1,4 +1,4 @@
-## Machine Vision Container: Docker, TensorFlow, TensorRT, PyTorch, OpenCV, CuPy, and PyCUDA ##
+## Machine Vision Container: Docker, TensorFlow, TensorRT, PyTorch, CUDA 10, OpenCV, CuPy, and PyCUDA ##
 
 GPU Acclerated computing container for computer vision applications, that are reproducible across environments.
 

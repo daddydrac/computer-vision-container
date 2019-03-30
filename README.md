@@ -1,8 +1,10 @@
-## Machine Vision Container ##
+## Machine Vision Container: Docker, TensorFlow, TensorRT, PyTorch, OpenCV, CuPy, and PyCUDA ##
 
-Reproduce computer vision applications across environments while having containerized access to NVIDIA GPU's
- 
+GPU Acclerated computing container for computer vision applications, that are reproducible across environments.
+
 -----------------------------------------------------------
+
+### Features ###
 
 - NVIDIA TensorRT inference accelerator and CUDA 10
 
@@ -12,28 +14,28 @@ Reproduce computer vision applications across environments while having containe
 
 - CuPy:latest 
 
-- Tensorflow for GPU v1.13.1 
-
-- TensorBoard by TensorFlow
-
-- Python 3.6
+- Tensorflow for GPU v1.13.1 & TensorBoard
 
 - OpenCV v4.0.1 for GPU
 
 - Ubuntu 18.04 so you can 'nix your way through the cmd line!
 
-- CUDA 10.0
-
 - cuDNN7.4.1.5 for deeep learning in CNN's
 
-- Hot Reloading: code updates will automatically update in container.
+- Hot Reloading: code updates will automatically update in container from /apps folder.
 
 - TensorBoard is on localhost:6006 and GPU enabled Jupyter is on localhost:8888.
+
+- Python 3.6.7
+
+- Only Pascal and Turing arch are supported 
 
 -------------------------------------------------------------
 
 
 ### Before you begin (This might be optional) ###
+
+Link to nvidia-docker2 install: [Tutorial](https://medium.com/@sh.tsang/docker-tutorial-5-nvidia-docker-2-0-installation-in-ubuntu-18-04-cb80f17cac65)
 
 You must install nvidia-docker2 and all it's deps first, assuming that is done, run:
 
@@ -63,7 +65,7 @@ Run the image, mount the volumes for Jupyter and app folder for your fav IDE, an
 ` docker run --rm -it --runtime=nvidia --user $(id -u):$(id -g) --group-add container_user --group-add sudo -v "${PWD}:/apps" -v $(pwd):/tf/notebooks  -p 8888:8888 -p 0.0.0.0:6006:6006  <container name> `
 
 
-### Step 2: Check to make sure GPU drivers and CUDA is running ###
+### Step 3: Check to make sure GPU drivers and CUDA is running ###
 
 - Exec into the container and check if your GPU is registering in the container and CUDA is working:
 
@@ -84,7 +86,7 @@ Run the image, mount the volumes for Jupyter and app folder for your fav IDE, an
 ` nvcc -V `
 
 
-### Step 3: How to launch TensorBoard ###
+### Step 4: How to launch TensorBoard ###
 
 - Demonstrates the functionality of TensorBoard dashboard
 
@@ -104,7 +106,7 @@ Run the image, mount the volumes for Jupyter and app folder for your fav IDE, an
 ` tensorboard --logdir=/tmp/tensorflow/logs/ `
 
 
-- cd over to /tf/notebooks/tf/apps/gpu_benchmarks and run:
+- cd over to /tf/notebooks/apps/gpu_benchmarks and run:
 
 
 ` python tensorboard.py `
@@ -114,11 +116,11 @@ Run the image, mount the volumes for Jupyter and app folder for your fav IDE, an
 
 
 
-### Step 4: Run tests to prove container based GPU perf ###
+### Step 5: Run tests to prove container based GPU perf ###
 
 - Demonstrate GPU vs CPU performance:
 
-- cd over to /tf/notebooks/tf/apps/gpu_benchmarks and run:
+- Exec into the container if you haven't, and cd over to /tf/notebooks/apps/gpu_benchmarks and run:
 
 - CPU Perf:
 
@@ -149,5 +151,6 @@ AppArmor on Ubuntu has sec issues, so remove docker from it on your local box, (
 ` sudo aa-remove-unknown `
 
 
-## END ##
+
+
 

@@ -13,13 +13,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     rm -rf /var/lib/apt/lists/*
 
 RUN apt-get update && \
-        apt-get install nvinfer-runtime-trt-repo-ubuntu1804-5.0.2-ga-cuda10.0 \
-        && apt-get update \
-        && apt-get install -y --no-install-recommends libnvinfer-dev=5.0.2-1+cuda10.0 \
-        && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
-
+        apt-get install nvinfer-runtime-trt-repo-ubuntu1804-5.0.2-ga-cuda10.0 && \
+        apt-get update && \
+        apt-get install libnvinfer5=5.0.2-1+cuda10.0
 
 RUN file="$(ls -1 /usr/local/)" && echo $file
 

@@ -110,7 +110,7 @@ Run the image, mount the volumes for Jupyter and app folder for your fav IDE, an
 
 - Type in: ` cd / ` to get root.
 
-Then cd into the folder that hot realods for custom IDE code at: `/apps/apps/gpu_benchmarks` and run:
+Then cd into the folder that hot reloads code from your local folder/fav IDE at: `/apps/apps/gpu_benchmarks` and run:
 
 
 ` python tensorboard.py `

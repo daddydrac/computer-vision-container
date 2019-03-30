@@ -6,6 +6,8 @@ GPU Acclerated computing container for computer vision applications, that are re
 
 ### Features ###
 
+- Contains most of the features in NVIDIA [Rapids.ai](https://rapids.ai/)
+
 - cuDF is a GPU DataFrame library for loading, joining, aggregating, filtering, and otherwise manipulating data.
 
 - cuML is a suite of libraries that implement machine learning algorithms and mathematical primitives functions that share compatible APIs with other RAPIDS projects.

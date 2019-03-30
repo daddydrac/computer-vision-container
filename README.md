@@ -93,10 +93,13 @@ Run the image, mount the volumes for Jupyter and app folder for your fav IDE, an
 - Demonstrates the functionality of TensorBoard dashboard
 
 
-- Exec into container if you haven't:
+- Exec into container if you haven't, as shown above:
 
 
-` docker ps `  get <container id> 
+- Get the <container id>:
+ 
+
+` docker ps `
 
 
 ` docker exec -u root -t -i <container id> /bin/bash `

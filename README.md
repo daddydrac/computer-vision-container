@@ -88,7 +88,7 @@ Run the image, mount the volumes for Jupyter and app folder for your fav IDE, an
 
 ### Step 4: How to launch TensorBoard ###
 
-(It helps to use mu;ltiple tabs in cmd line because you have to leave atleast 1 open for TensorBoard)
+(It helps to use multiple tabs in cmd line OPEN because you have to leave atleast 1 open for TensorBoard@:6006)
 
 - Demonstrates the functionality of TensorBoard dashboard
 

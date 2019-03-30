@@ -167,6 +167,10 @@ AppArmor on Ubuntu has sec issues, so remove docker from it on your local box, (
 
 ` sudo aa-remove-unknown `
 
+--------------------------------------------------
+
+
+NVIDIA Rapids is a WIP, see status of pull reqs, [here](https://github.com/rapidsai/cuml/issues/174).
 
 
 

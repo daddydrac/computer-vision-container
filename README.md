@@ -1,3 +1,8 @@
+#### This container has been deprecated in favor of:
+https://github.com/joehoeller/NVIDIA-GPU-Tensor-Core-Accelerator-PyTorch-OpenCV
+
+--------------------------------------------------------------------------------
+
 ### Machine Vision Container: Docker, TensorFlow, TensorRT, PyTorch, Rapids.ai: CuGraph, CuML, and CuDF, CUDA 10, OpenCV, CuPy, and PyCUDA ###
 
 GPU Acclerated computing container for computer vision applications, that are reproducible across environments.

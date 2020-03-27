@@ -1,4 +1,4 @@
-#### This container has been deprecated in favor of:
+#### This container is no longer supported, and has been deprecated in favor of:
 https://github.com/joehoeller/NVIDIA-GPU-Tensor-Core-Accelerator-PyTorch-OpenCV
 
 --------------------------------------------------------------------------------

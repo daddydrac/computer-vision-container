@@ -1,5 +1,5 @@
 # This container is no longer supported, and has been deprecated in favor of:
-https://github.com/joehoeller/NVIDIA-GPU-Tensor-Core-Accelerator-PyTorch-OpenCV
+https://github.com/salinaaaaaa/NVIDIA-GPU-Tensor-Core-Accelerator-PyTorch-OpenCV
 
 --------------------------------------------------------------------------------
 
